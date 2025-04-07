@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <img
+        src="images/pfp.jpg"
+        alt="Profile Picture"
+        width="100"
+        height="100"
+      />
+      <h1>Syed Kazim Raza</h1>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+        <li><a href="https://github.com" target="_blank">GitHub</a></li>
+        <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+        <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
+      </ul>
+    </nav>
+
+    <!-- Objective Section -->
+    <section>
+      <h2>Objective</h2>
+      <p>
+        To become a skilled software developer and contribute meaningfully to
+        innovative projects that solve real-world problems.
+      </p>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section>
+      <h2>Hobbies</h2>
+      <ul>
+        <li>Reading tech blogs</li>
+        <li>Coding mini projects</li>
+        <li>Watching documentaries</li>
+        <li>Gaming</li>
+      </ul>
+    </section>
+
+    <!-- Education Section -->
+    <section>
+      <h2>Education</h2>
+      <table border="1">
+        <tr>
+          <th>Degree</th>
+          <th>Institution</th>
+          <th>Year</th>
+        </tr>
+        <tr>
+          <td>Bachelor of Science in Computer Science</td>
+          <td>XYZ University</td>
+          <td>2023</td>
+        </tr>
+        <tr>
+          <td>Intermediate in Pre-Engineering</td>
+          <td>ABC College</td>
+          <td>2019</td>
+        </tr>
+        <tr>
+          <td>Matriculation</td>
+          <td>DEF School</td>
+          <td>2017</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Feedback Form -->
+    <section>
+      <h2>Feedback Form</h2>
+      <form>
+        <label>Full Name:</label><br />
+        <input type="text" name="fullname" required /><br />
+
+        <label>Email:</label><br />
+        <input type="email" name="email" required /><br />
+
+        <label>Password:</label><br />
+        <input type="password" name="password" /><br />
+
+        <label>Phone Number:</label><br />
+        <input type="tel" name="phone" /><br />
+
+        <label>Age:</label><br />
+        <input type="number" name="age" /><br />
+
+        <label>Date of Visit:</label><br />
+        <input type="date" name="visit-date" /><br />
+
+        <!-- Favorite Color -->
+        <label>Favorite Color:</label><br />
+        <input
+          type="color"
+          id="favColor"
+          name="color"
+          value="#000000"
+          oninput="document.getElementById('colorBox').style.backgroundColor = this.value"
+        />
+        <div
+          id="colorBox"
+          style="
+            display: inline-block;
+            width: 40px;
+            height: 25px;
+            margin-left: 10px;
+            border: 1px solid #ccc;
+            background-color: #000000;
+          "
+        ></div>
+        <br />
+
+        <label>Rate My Website:</label><br />
+        <input type="range" min="1" max="5" /><br />
+
+        <label>Choose your country:</label><br />
+        <select name="country">
+          <option>Pakistan</option>
+          <option>USA</option>
+          <option>UK</option></select
+        ><br />
+
+        <label>Additional Comments:</label><br />
+        <textarea name="comments"></textarea><br />
+
+        <input type="submit" value="Submit Feedback" />
+      </form>
+    </section>
+  </body>
+</html>
