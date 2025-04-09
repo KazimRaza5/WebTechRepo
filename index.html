@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <img
+        src="images/pfp.jpg"
+        alt="Profile Picture"
+        width="100"
+        height="100"
+      />
+      <h1>Syed Kazim Raza</h1>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav-menu">
+      <ul>
+        <li>
+          <a
+            href="https://www.upwork.com/freelancers/~015bc4c17027598d4b?viewMode=1"
+            target="_blank"
+            >Upwork</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/KazimRaza5" target="_blank">GitHub</a>
+        </li>
+        <li>
+          <a
+            href="https://linkedin.com/in/syed-kazim-raza-a17115312"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Objective Section -->
+    <section>
+      <h2>Objective</h2>
+      <p>
+        To become a skilled software developer and contribute meaningfully to
+        innovative projects that solve real-world problems.
+      </p>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section>
+      <h2>Hobbies</h2>
+      <ul>
+        <li>Watching Formula 1 Races</li>
+        <li>Coding mini projects</li>
+        <li>Watching documentaries</li>
+        <li>Gaming</li>
+      </ul>
+    </section>
+
+    <!-- Education Section -->
+    <section>
+      <h2>Education</h2>
+      <table border="1">
+        <tr>
+          <th>Degree</th>
+          <th>Institution</th>
+          <th>Year</th>
+        </tr>
+        <tr>
+          <td>Bachelor of Science in Computer Science</td>
+          <td>University of Management & Technology</td>
+          <td>2022 - Present</td>
+        </tr>
+        <tr>
+          <td>Intermediate in Pre-Medical</td>
+          <td>Punjab Group of Colleges</td>
+          <td>2020 - 2022</td>
+        </tr>
+        <tr>
+          <td>Matriculation</td>
+          <td>Sir Syed Model School</td>
+          <td>2018 - 2020</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Feedback Form -->
+    <section>
+      <h2>Feedback Form</h2>
+      <form
+        action="https://formsubmit.co/kazimraza1524@gmail.com"
+        method="POST"
+      >
+        <div class="form-group">
+          <label for="firstName">First Name:</label><br />
+          <input type="text" id="firstName" name="firstName" required /><br />
+        </div>
+
+        <div class="form-group">
+          <label for="lastName">Last Name:</label><br />
+          <input type="text" id="lastName" name="lastName" required /><br />
+        </div>
+
+        <div class="form-group">
+          <label for="age">Age:</label><br />
+          <input
+            type="number"
+            id="age"
+            name="age"
+            min="1"
+            max="120"
+            required
+          /><br />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" required /><br />
+        </div>
+
+        <div class="form-group">
+          <label for="profession">Profession:</label><br />
+          <select id="profession" name="profession" required>
+            <option value="">-- Select your profession --</option>
+            <option value="student">Student</option>
+            <option value="developer">Developer</option>
+            <option value="designer">Designer</option>
+            <option value="manager">Manager</option>
+            <option value="entrepreneur">Entrepreneur</option>
+            <option value="other">Other</option></select
+          ><br />
+        </div>
+
+        <div class="form-group">
+          <label for="nationality">Nationality:</label><br />
+          <select id="nationality" name="nationality" required>
+            <option value="">-- Select your nationality --</option>
+            <option value="pakistan">Pakistan</option>
+            <option value="usa">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="canada">Canada</option>
+            <option value="australia">Australia</option>
+            <option value="india">India</option>
+            <option value="other">Other</option></select
+          ><br />
+        </div>
+
+        <div class="form-group">
+          <label for="source">Where did you hear about us?</label><br />
+          <select id="source" name="source" required>
+            <option value="">-- Please select --</option>
+            <option value="search">Search Engine</option>
+            <option value="social">Social Media</option>
+            <option value="friend">Friend/Colleague</option>
+            <option value="professional">Professional Network</option>
+            <option value="job">Job Platform</option>
+            <option value="other">Other</option></select
+          ><br />
+        </div>
+
+        <div class="form-group">
+          <label for="reason">Reason for visiting my portfolio:</label><br />
+          <select id="reason" name="reason" required>
+            <option value="">-- Please select --</option>
+            <option value="hiring">Looking to hire</option>
+            <option value="collaboration">Seeking collaboration</option>
+            <option value="networking">Professional networking</option>
+            <option value="inspiration">Looking for inspiration</option>
+            <option value="educational">Educational purposes</option>
+            <option value="other">Other</option></select
+          ><br />
+        </div>
+
+        <div class="form-group">
+          <label for="dreamJob">Your dream job:</label><br />
+          <input type="text" id="dreamJob" name="dreamJob" /><br />
+        </div>
+
+        <div class="form-group">
+          <label for="feedback">Your feedback:</label><br />
+          <textarea
+            id="feedback"
+            name="feedback"
+            rows="5"
+            cols="30"
+            required
+          ></textarea
+          ><br />
+        </div>
+
+        <div class="form-group">
+          <input type="submit" value="Submit Feedback" />
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
